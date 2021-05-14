@@ -1,0 +1,38 @@
+html, body {
+    margin: 0 auto;
+}
+
+.header {
+  background: url('https://ffvii-remakeconcerts.com/wp-content/themes/ffvii-remake/dist/images/bg-top.jpg') #040504;
+  /* no-repeat right bottom #040504; */
+  background-position: 100% 100%;
+  /* background-size:100% 170px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+}
+
+.header img {
+  width: 100%
+  height: auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+span {
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .header {
+    background-position: center top;
+    background-size: cover; /* covers entire div */
+  }
+  .header img {
+    width: 25%;
+  }
+}
