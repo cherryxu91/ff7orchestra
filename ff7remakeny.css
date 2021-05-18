@@ -1,38 +1,126 @@
+* {
+  overflow: auto;
+  /* or auto */
+}
+
 html, body {
-    margin: 0 auto;
+  margin: 0 auto;
+  background-color: #1f2726;
+  color: white;
+}
+
+nav {
+  text-align: right;
+  margin: 30px 50px 50px 0;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid #1C4843;
+  text-decoration: none;
+  color: #2ED3BB;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1.75px;
+  margin-left: 10px;
+}
+
+.btn:hover {
+  border: 1px solid #2ED3BB;
+  transition: 0.5s;
+}
+
+.orchestraDates {
+  display: inline-block;
+  max-width: 100%;
+  border: 1px solid #2ED3BB;
+  padding: 15px;
+  margin: 20px;
+}
+
+.orchestraDates:hover {
+  border: 3px solid #2ED3BB;
+  transition: all 500ms linear;
 }
 
 .header {
   background: url('https://ffvii-remakeconcerts.com/wp-content/themes/ffvii-remake/dist/images/bg-top.jpg') #040504;
-  /* no-repeat right bottom #040504; */
   background-position: 100% 100%;
-  /* background-size:100% 170px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
+  background-size: cover;
 }
 
 .header img {
-  width: 100%
+  max-width: 70%;
   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-img {
-  width: 100%;
-  height: auto;
+h2 {
+  text-transform: uppercase;
+  font-size: 1.75em;
+}
+
+.sale {
+  color: #2ED3BB;
 }
 
 span {
   font-weight: 600;
 }
 
+.footerbg {
+  max-width: 100%;
+}
+
+.footerLogo {
+  width: 150px;
+  margin: 15px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @media (min-width: 768px) {
+  nav {
+    margin: 50px 75px 125px 0;
+  }
+
   .header {
     background-position: center top;
-    background-size: cover; /* covers entire div */
+    background-size: cover;
+    /* covers entire div */
   }
+
   .header img {
-    width: 25%;
+    width: 35%;
+    margin-bottom: 300px;
+    margin-left: 125px;
+  }
+
+  .orchestraDates {
+    float: right;
+    max-width: 50%;
+  }
+
+  /* .bodyInfo {
+    width: 80%;
+  } figure out how to only affect width with middle content */
+  footer p {
+    font-size: 12px;
+  }
+
+  .footerLogo {
+    float: right;
+    margin-right: 30px;
   }
 }
+
+/* @media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+} */
