@@ -30,26 +30,13 @@ nav {
   transition: 0.5s;
 }
 
+.bodyInfo {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .orchestraDates {
-  text-transform: uppercase;
-  display: inline-block;
-  max-width: 100%;
-  border: 1px solid #2ED3BB;
-  padding: 15px;
-  margin: 20px;
-}
-
-.orchestraDates:hover {
-  border: 3px solid #2ED3BB;
-  transition: all 500ms linear;
-}
-
-.orchestraDates img {
-  max-height: 225px;
-}
-
-.orchestraDates figcaption {
-  text-align: center;
+  display: none;
 }
 
 .header {
@@ -70,13 +57,42 @@ figcaption {
   text-transform: uppercase;
 }
 
-h1, h2 {
+h1, .artists {
   text-transform: uppercase;
-  font-size: 1.75em;
+  font-size: 50px;
+  text-align: center;
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
 }
 
-.sale {
+.concertPostponed {
+  font-size: 16px;
+}
+
+.paragraph {
   color: #2ED3BB;
+  text-decoration: none;
+}
+
+.artistsPerforming {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.artistsPerforming img {
+  max-width: 85%;
+  margin: auto;
+  display: block;
+  line-height: 0;
+}
+
+.artistName {
+  text-align: center;
+  color: #2ED3BB;
+}
+
+.box {
+  border: solid 1px #2ED3BB;
 }
 
 .homeBtn {
@@ -87,8 +103,7 @@ h1, h2 {
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 1.75px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: auto;
 }
 
 .homeBtn:hover {
@@ -96,18 +111,25 @@ h1, h2 {
   transition: 0.5s;
 }
 
-.footer {
-  text-align: center;
+/* .footer a {
   display: inline-block;
+  text-align: center;
+} center a href */
+
+.footer img {
+  max-width: 100%;
+  display: block;
+  text-align: center;
 }
 
-.footerbg {
-  max-width: 100%;
+footer {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .footerLogo {
-  width: 150px;
-  margin: 15px;
+  width: 200px;
+  margin: 30px;
   display: inline-block;
   margin-right: auto;
   margin-left: auto;
@@ -133,13 +155,38 @@ h1, h2 {
   .orchestraDates {
     float: right;
     max-width: 50%;
+    text-transform: uppercase;
+    display: inline-block;
+    max-width: 100%;
+    border: 1px solid #2ED3BB;
+    padding: 15px;
+    margin: 20px;
   }
+
+.orchestraDates:hover {
+  border: 3px solid #2ED3BB;
+  transition: all 500ms linear;
+}
+
+.orchestraDates img {
+  max-height: 225px;
+}
+
+.orchestraDates figcaption {
+  text-align: center;
+}
 
   /* .bodyInfo {
     width: 80%;
   } figure out how to only affect width with middle content */
+
+  footer {
+    display: flex;
+    justify-content: row;
+  }
+
   footer p {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .footerLogo {
