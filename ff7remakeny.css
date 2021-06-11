@@ -1,6 +1,5 @@
 * {
   overflow: auto;
-  /* or auto */
 }
 
 html, body {
@@ -44,6 +43,7 @@ nav {
   background-position: 100% 100%;
   background-size: cover;
 }
+/* still need to separate images in header */
 
 .header img {
   max-width: 70%;
@@ -95,6 +95,14 @@ h1, .artists {
   border: solid 1px #2ED3BB;
 }
 
+.footer {
+  text-align: center;
+}
+
+.footer p {
+  margin: 20px;
+}
+
 .homeBtn {
   padding: 10px 20px;
   border: 1px solid #1C4843;
@@ -103,7 +111,7 @@ h1, .artists {
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 1.75px;
-  margin: auto;
+  margin: 75px;
 }
 
 .homeBtn:hover {
@@ -111,20 +119,10 @@ h1, .artists {
   transition: 0.5s;
 }
 
-/* .footer a {
-  display: inline-block;
-  text-align: center;
-} center a href */
-
 .footer img {
   max-width: 100%;
   display: block;
   text-align: center;
-}
-
-footer {
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 .footerLogo {
