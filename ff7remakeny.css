@@ -6,11 +6,12 @@ html, body {
   margin: 0 auto;
   background-color: #1f2726;
   color: white;
+  font-family: "Gotham Book", Verdana, sans-serif;
 }
 
 nav {
   text-align: right;
-  margin: 30px 50px 50px 0;
+  margin: 30px;
 }
 
 .btn {
@@ -39,11 +40,10 @@ nav {
 }
 
 .header {
-  background: url('https://ffvii-remakeconcerts.com/wp-content/themes/ffvii-remake/dist/images/bg-top.jpg') #040504;
-  background-position: 100% 100%;
-  background-size: cover;
+  background: url('https://ffvii-remakeconcerts.com/wp-content/themes/ffvii-remake/dist/images/bg-top.jpg') #040504 no-repeat right bottom;
+  background-size: 200%;
+  padding-bottom: 140%;
 }
-/* still need to separate images in header */
 
 .header img {
   max-width: 70%;
@@ -101,6 +101,8 @@ h1, .artists {
 
 .footer p {
   margin: 20px;
+  font-size: 10.5px;
+  text-align: left;
 }
 
 .homeBtn {
@@ -111,7 +113,7 @@ h1, .artists {
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 1.75px;
-  margin: 75px;
+  margin: 75px 50px 25px 50px;
 }
 
 .homeBtn:hover {
@@ -139,15 +141,17 @@ h1, .artists {
   }
 
   .header {
-    background-position: center top;
+    background: url('https://ffvii-remakeconcerts.com/wp-content/themes/ffvii-remake/dist/images/bg-top.jpg') #040504;
+    background-position: 100% 100%;
     background-size: cover;
-    /* covers entire div */
+    padding-bottom: 0;
   }
 
   .header img {
     width: 35%;
     margin-bottom: 300px;
-    margin-left: 125px;
+    margin-left: 100px;
+    margin-top: -50px;
   }
 
   .orchestraDates {
@@ -173,10 +177,6 @@ h1, .artists {
 .orchestraDates figcaption {
   text-align: center;
 }
-
-  /* .bodyInfo {
-    width: 80%;
-  } figure out how to only affect width with middle content */
 
   footer {
     display: flex;
