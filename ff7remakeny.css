@@ -7,6 +7,7 @@ html, body {
   background-color: #1f2726;
   color: white;
   font-family: "Gotham Book", Verdana, sans-serif;
+  font-size: 15px;
 }
 
 nav {
@@ -40,7 +41,7 @@ nav {
 }
 
 .header {
-  background: url('https://ffvii-remakeconcerts.com/wp-content/themes/ffvii-remake/dist/images/bg-top.jpg') #040504 no-repeat right bottom;
+  background: linear-gradient(to bottom,rgba(255,153,153,0) 90%, #1f2726 100%), url('https://ffvii-remakeconcerts.com/wp-content/themes/ffvii-remake/dist/images/bg-top.jpg') #040504 no-repeat right bottom;
   background-size: 200%;
   padding-bottom: 140%;
 }
@@ -61,16 +62,34 @@ h1, .artists {
   text-transform: uppercase;
   font-size: 50px;
   text-align: center;
-  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-family: Arial Narrow, Helvetica, sans-serif;
+  margin-top: 0;
 }
 
-.concertPostponed {
-  font-size: 16px;
+.circle {
+  text-align: center;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #2ED3BB;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .paragraph {
   color: #2ED3BB;
   text-decoration: none;
+  margin-bottom: 50px;
 }
 
 .artistsPerforming {
@@ -95,13 +114,18 @@ h1, .artists {
   border: solid 1px #2ED3BB;
 }
 
+footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .footer {
   text-align: center;
 }
 
 .footer p {
   margin: 20px;
-  font-size: 10.5px;
+  font-size: 12px;
   text-align: left;
 }
 
@@ -128,8 +152,9 @@ h1, .artists {
 }
 
 .footerLogo {
-  width: 200px;
-  margin: 30px;
+  width: 175px;
+  margin: 10px;
+  margin-bottom: 20px;
   display: inline-block;
   margin-right: auto;
   margin-left: auto;
@@ -141,7 +166,7 @@ h1, .artists {
   }
 
   .header {
-    background: url('https://ffvii-remakeconcerts.com/wp-content/themes/ffvii-remake/dist/images/bg-top.jpg') #040504;
+    background-image: linear-gradient(to bottom, #1f2726, 0%,rgba(255,153,153,0) 85%, #1F2724 100%), url("https://ffvii-remakeconcerts.com/wp-content/themes/ffvii-remake/dist/images/bg-top.jpg");
     background-position: 100% 100%;
     background-size: cover;
     padding-bottom: 0;
@@ -178,19 +203,14 @@ h1, .artists {
   text-align: center;
 }
 
-  footer {
-    display: flex;
-    justify-content: row;
-  }
+footer p {
+  font-size: 10px;
+}
 
-  footer p {
-    font-size: 10px;
-  }
-
-  .footerLogo {
-    float: right;
-    margin-right: 30px;
-  }
+.footerLogo {
+  float: right;
+  margin-right: 30px;
+}
 }
 
 /* @media (min-width: 992px) {
