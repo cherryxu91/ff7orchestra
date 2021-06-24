@@ -47,9 +47,9 @@ nav {
 }
 
 .header img {
-  max-width: 70%;
+  max-width: 90%;
   height: auto;
-  display: flex;
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
@@ -82,7 +82,7 @@ h1, .artists {
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 15px;
 }
 
@@ -98,35 +98,43 @@ h2 {
   flex-wrap: wrap;
 }
 
+.box {
+  position: relative;
+  z-index: 0;
+  margin-bottom: 35px;
+}
+
+.box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: border-box;
+  border: 1px solid #2ED3BB;
+  transform: translate(16%);
+}
+
 .artistsPerforming img {
   max-width: 85%;
   margin: auto;
   display: block;
   line-height: 0;
+  margin-top: 10px;
 }
 
 .artistName {
   text-align: center;
   color: #2ED3BB;
+  font-family: "Abril Fatface", Georgia, serif;
+  font-size: 28px;
+  margin: 10px;
 }
 
-.box {
-  border: solid 1px #2ED3BB;
-}
-
-footer {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.footer {
+.homepage {
   text-align: center;
-}
-
-.footer p {
-  margin: 20px;
-  font-size: 12px;
-  text-align: left;
 }
 
 .homeBtn {
@@ -137,7 +145,7 @@ footer {
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 1.75px;
-  margin: 75px 50px 25px 50px;
+  margin: 30px 50px 25px 50px;
 }
 
 .homeBtn:hover {
@@ -145,10 +153,37 @@ footer {
   transition: 0.5s;
 }
 
-.footer img {
+.footerBackground {
+  position: relative;
+  z-index: 1;
+}
+
+.footerBackground::after {
+  content: "";
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  top: 0;
+  background-image: -webkit-linear-gradient(top, #1f2726 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: -o-linear-gradient(top, #1f2726 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(180deg, #1f2726 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.footerBackground img {
   max-width: 100%;
   display: block;
   text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer p {
+  margin: 20px;
+  font-size: 12px;
+  text-align: left;
 }
 
 .footerLogo {
@@ -172,10 +207,10 @@ footer {
     padding-bottom: 0;
   }
 
-  .header img {
+  .logo {
     width: 35%;
     margin-bottom: 300px;
-    margin-left: 100px;
+    margin-left: 90px;
     margin-top: -50px;
   }
 
@@ -190,27 +225,27 @@ footer {
     margin: 20px;
   }
 
-.orchestraDates:hover {
-  border: 3px solid #2ED3BB;
-  transition: all 500ms linear;
-}
+  .orchestraDates:hover {
+    border: 3px solid #2ED3BB;
+    transition: all 500ms linear;
+  }
 
-.orchestraDates img {
-  max-height: 225px;
-}
+  .orchestraDates img {
+    max-height: 225px;
+  }
 
-.orchestraDates figcaption {
-  text-align: center;
-}
+  .orchestraDates figcaption {
+    text-align: center;
+  }
 
-footer p {
-  font-size: 10px;
-}
+  footer p {
+    font-size: 10px;
+  }
 
-.footerLogo {
-  float: right;
-  margin-right: 30px;
-}
+  .footerLogo {
+    float: right;
+    margin-right: 30px;
+  }
 }
 
 /* @media (min-width: 992px) {
