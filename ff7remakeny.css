@@ -198,11 +198,14 @@ footer p {
 @media (min-width: 768px) {
   nav {
     margin: 50px 75px 125px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
   .header {
     background-image: linear-gradient(to bottom, #1f2726, 0%,rgba(255,153,153,0) 85%, #1F2724 100%), url("https://ffvii-remakeconcerts.com/wp-content/themes/ffvii-remake/dist/images/bg-top.jpg");
-    background-position: 100% 100%;
+    background-position: 70% 100%;
     background-size: cover;
     padding-bottom: 0;
   }
@@ -210,8 +213,8 @@ footer p {
   .logo {
     width: 35%;
     margin-bottom: 300px;
-    margin-left: 90px;
-    margin-top: -50px;
+    margin-left: 75px;
+    margin-top: -100px;
   }
 
   .orchestraDates {
