@@ -11,8 +11,14 @@ html, body {
 }
 
 nav {
-  text-align: right;
-  margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 20px 30px;
+}
+
+nav a:first-of-type {
+  margin-right: 15px;
 }
 
 .btn {
@@ -23,7 +29,7 @@ nav {
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 1.75px;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .btn:hover {
@@ -47,11 +53,12 @@ nav {
 }
 
 .header img {
-  max-width: 90%;
+  max-width: 70%;
   height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 15px;
 }
 
 figcaption {
@@ -178,6 +185,7 @@ h2 {
 footer {
   display: flex;
   flex-wrap: wrap;
+  background-color: #0E1915;
 }
 
 footer p {
@@ -196,6 +204,14 @@ footer p {
 }
 
 @media (min-width: 768px) {
+  html, body {
+    font-size: 18px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+
   nav {
     margin: 50px 75px 125px 0;
     display: flex;
@@ -210,6 +226,10 @@ footer p {
     padding-bottom: 0;
   }
 
+  .header img {
+    max-width: 90%;
+  }
+
   .logo {
     width: 35%;
     margin-bottom: 300px;
@@ -219,10 +239,9 @@ footer p {
 
   .orchestraDates {
     float: right;
-    max-width: 50%;
+    max-width: 45%;
     text-transform: uppercase;
     display: inline-block;
-    max-width: 100%;
     border: 1px solid #2ED3BB;
     padding: 15px;
     margin: 20px;
@@ -234,11 +253,29 @@ footer p {
   }
 
   .orchestraDates img {
-    max-height: 225px;
+    height: 327px;
+  }
+
+
+  .orchestraDates p {
+    font-size: 17px;
   }
 
   .orchestraDates figcaption {
     text-align: center;
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+  .circle {
+    display: none;
+  }
+  
+  h2 {
+    font-weight: 600;
+    font-size: 18px;
   }
 
   footer p {
@@ -250,11 +287,3 @@ footer p {
     margin-right: 30px;
   }
 }
-
-/* @media (min-width: 992px) {
-
-}
-
-@media (min-width: 1200px) {
-
-} */
