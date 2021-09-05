@@ -47,7 +47,7 @@ nav a:first-of-type {
 }
 
 .header {
-  background: linear-gradient(to bottom,rgba(255,153,153,0) 90%, #1f2726 100%), url('https://ffvii-remakeconcerts.com/wp-content/themes/ffvii-remake/dist/images/bg-top.jpg') #040504 no-repeat right bottom;
+  background: linear-gradient(to bottom, rgba(255, 153, 153, 0) 90%, #1f2726 100%), url('https://ffvii-remakeconcerts.com/wp-content/themes/ffvii-remake/dist/images/bg-top.jpg') #040504 no-repeat right bottom;
   background-size: 200%;
   padding-bottom: 140%;
 }
@@ -88,15 +88,25 @@ h1, .artists {
   margin-bottom: 10px;
 }
 
-h2 {
+.dates {
   font-weight: 500;
   font-size: 15px;
+  color: #2ED3BB;
 }
 
 .paragraph {
   color: #2ED3BB;
   text-decoration: none;
-  margin-bottom: 50px;
+}
+
+.lastParagraph {
+  font-family: Arial Narrow, Helvetica, sans-serif;
+  font-size: 29px;
+  color: #2ED3BB;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 200px 100px 20px;
+  line-height: 1.2;
 }
 
 .artistsPerforming {
@@ -215,12 +225,12 @@ footer p {
   nav {
     margin: 50px 75px 125px 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-end;
   }
 
   .header {
-    background-image: linear-gradient(to bottom, #1f2726, 0%,rgba(255,153,153,0) 85%, #1F2724 100%), url("https://ffvii-remakeconcerts.com/wp-content/themes/ffvii-remake/dist/images/bg-top.jpg");
+    background-image: linear-gradient(to bottom, #1f2726, 0%, rgba(255, 153, 153, 0) 85%, #1F2724 100%), url("https://ffvii-remakeconcerts.com/wp-content/themes/ffvii-remake/dist/images/bg-top.jpg");
     background-position: 70% 100%;
     background-size: cover;
     padding-bottom: 0;
@@ -234,7 +244,7 @@ footer p {
     width: 35%;
     margin-bottom: 300px;
     margin-left: 75px;
-    margin-top: -100px;
+    margin-top: -45px;
   }
 
   .orchestraDates {
@@ -256,7 +266,6 @@ footer p {
     height: 327px;
   }
 
-
   .orchestraDates p {
     font-size: 17px;
   }
@@ -272,7 +281,7 @@ footer p {
   .circle {
     display: none;
   }
-  
+
   h2 {
     font-weight: 600;
     font-size: 18px;
